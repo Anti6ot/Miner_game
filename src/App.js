@@ -1,11 +1,22 @@
 import React from "react";
 import Board from "./components/Board";
-
+import "./styles/cell.css";
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        textAlign: "center",
+      }}
+    >
       <div>Minesweete</div>
-      <Board />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Board />
+      </div>
     </div>
   );
 }
