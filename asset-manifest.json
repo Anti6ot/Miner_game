@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Miner_game/static/css/main.85c55f4c.css",
+    "main.js": "/Miner_game/static/js/main.cbb8c5c0.js",
+    "index.html": "/Miner_game/index.html",
+    "main.85c55f4c.css.map": "/Miner_game/static/css/main.85c55f4c.css.map",
+    "main.cbb8c5c0.js.map": "/Miner_game/static/js/main.cbb8c5c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85c55f4c.css",
+    "static/js/main.cbb8c5c0.js"
+  ]
+}
