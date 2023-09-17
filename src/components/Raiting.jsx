@@ -1,13 +1,33 @@
-import localStorageService from "../services/localStorage.service";
+import { useSelector } from "react-redux";
+import { getTabRecords } from "../store/tabRecord";
 
 const Raiting = () => {
-  const userName = localStorageService.getUserName();
-  const userPoints = localStorageService.getUserPoints();
+  // получаем таблицу игроков
+  const tabs = useSelector(getTabRecords());
+
   return (
     <div>
       <p>Raiting</p>
-      {userName}
-      {userPoints}
+      <table>
+        <thead>
+          <tr>
+            <td>Имя</td>
+            <td>Очки</td>
+          </tr>
+        </thead>
+        <tbody>
+          {tabs ? (
+            <tr>
+              <td>{tabs.name}</td>
+              <td>{tabs.points}</td>
+            </tr>
+          ) : (
+            <tr>
+              <td></td>
+            </tr>
+          )}
+        </tbody>
+      </table>
     </div>
   );
 };

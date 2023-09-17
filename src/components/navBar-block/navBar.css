@@ -1,0 +1,29 @@
+:link, :visited {
+	text-decoration: none;
+	}
+ul, ol {
+	list-style: none;
+	}
+h1, h2, h3, h4, h5, h6, pre, code, p {
+	font-size: 1em;
+	}
+
+a img, :link img, :visited img {
+	border: none;
+	}
+address {
+	font-style: normal;
+	}
+
+.ul-list {
+    display: flex;
+}
+li {
+
+    padding: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+li :hover{
+    background-color: antiquewhite;
+}

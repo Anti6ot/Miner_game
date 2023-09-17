@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Board from "./components/Board";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Raiting from "./components/Raiting";
-import NavBar from "./components/NavBar";
 import LoginIn from "./components/loginIn-block/LoginIn";
+import NavBar from "./components/navBar-block/NavBar";
 
 function App() {
   const [render, setRender] = useState(true);
@@ -11,6 +11,7 @@ function App() {
   return (
     <div>
       <NavBar />
+
       {render ? <LoginIn render={render} setRender={setRender} /> : ""}
       <div
         style={{

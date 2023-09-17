@@ -6,8 +6,15 @@ import { revealed } from "../util/reveal";
 import Modal from "./modal-block/Modal";
 import Timer from "./Timer";
 import localStorageService from "../services/localStorage.service";
+import { useDispatch } from "react-redux";
+import { setTabRecord } from "../store/tabRecord";
 
 const Board = () => {
+  // сохраняем в стэйт
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(setTabRecord());
+  });
   //сетка
   const [grid, setGrid] = useState([]);
   // колличество свободных ячеек от мин
@@ -16,8 +23,9 @@ const Board = () => {
   const [mineLocations, setMineLocations] = useState([]);
   //
   const [gameOver, setGameOver] = useState(false);
-  //
+  //очищает таймер и передается в Timer
   const [isLoading, setLoading] = useState(false);
+
   const userName = localStorageService.getUserName();
   const options = [
     { value: 10 * 60, label: "Лёгкий", sizeA: "8", sizeB: "8", mines: "5" },
