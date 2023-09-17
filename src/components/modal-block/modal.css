@@ -1,0 +1,22 @@
+#gameOverImage {
+    opacity: 100;
+    z-index: 4;
+    height: 50%;
+    max-width: 100%;
+    margin: 0 50px 20px;
+    background: url("https://avatars.dzeninfra.ru/get-zen_doc/5327700/pub_632060975363977a5aeed463_63332650b5a66303c3d45721/scale_1200")
+      0px 80px no-repeat;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    position: relative;
+    padding: 20px;
+  }
+  .tryAgain {
+    cursor: pointer;
+    margin: 0 50px;
+    border-radius: 7px;
+    background: darkgreen;
+    color: rgb(158, 255, 158);
+    padding: 10px;
+    font-weight: 700;
+  }

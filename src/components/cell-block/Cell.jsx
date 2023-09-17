@@ -1,5 +1,6 @@
 import React from "react";
-import { mineColor } from "../util/mineColors";
+import "./cell.css";
+import { mineColor } from "../../util/mineColors";
 
 const Cell = ({ details, updateFlag, revealCell }) => {
   // определяет стиль клеток с помощью утилит
